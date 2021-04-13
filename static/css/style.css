@@ -278,7 +278,7 @@ strong{
 
 #profile{
   background-color: white !important;
-  box-shadow: :none!important;
+  box-shadow:none!important;
   color: #2bbbad;
   padding:8px;
 }
@@ -324,9 +324,7 @@ strong{
   width: 80%;
   text-align: center;
 }
-#visit{
 
-}
 @media screen and (max-width:360px)  {
   .overl{
     display: none;
