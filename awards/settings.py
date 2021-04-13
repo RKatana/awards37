@@ -9,7 +9,12 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
+import os
+import cloudinary
+import cloudinary.uploader
+import cloudinary.api
+import django_heroku
+from decouple import config
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -37,6 +42,14 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'projects',
+    'cloudinary',
+    'bootstrap4',
+    'django_registration',
+    'rest_framework',
+    'rest_framework.authtoken',
+    'coverage',
 ]
 
 MIDDLEWARE = [
